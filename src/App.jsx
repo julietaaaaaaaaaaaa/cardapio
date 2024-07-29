@@ -54,11 +54,15 @@ export default function App() {
         <p>Meus Pedidos</p>
         {
             listaPedidos.map((produto)=>
-            <div key={produto.id}>
-            <p>{produto.item}</p>
-            </div>
+            <table key={produto.id}>
+              <tr>
+            <td>{produto.item}</td>
+            <td>{produto.preco}</td>
+           
+            </tr>
+            </table>
             )
-        }
+            }
        </div>
     </div>
     );
